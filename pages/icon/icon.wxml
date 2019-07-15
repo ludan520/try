@@ -1,0 +1,30 @@
+<!--pages/icon/icon.wxml-->
+<view class='title'>icon组件</view>
+
+<!-- icon的类型，有效值：success, success_no_circle, info, warn, waiting, cancel, download, search, clear -->
+<text>\n</text>
+<icon type="success" size="50"></icon>
+<icon type="success_no_circle" color='green'></icon>
+<icon type="info"></icon>
+<icon type="warn"></icon>
+<icon type="waiting"></icon>
+<icon type="cancel"></icon>
+<icon type="download"></icon>
+<icon type="search"></icon>
+<icon type="clear"></icon>
+
+<view class='title'>progress组件</view>
+<progress percent="30" 
+show-info="true" 
+border-radius='true '
+font-size='20'
+stroke-width="10"
+color='#d0915c'
+activeColor="#22a6f2"
+active-mode	></progress>
+
+<view class='title'>rich-text富文本组件</view>
+<rich-text nodes="<p>奔跑</p>"></rich-text>
+<rich-text nodes="[1,2,3,4]"></rich-text>
+
+<rich-text nodes="{{node}}" bindtap="tap"></rich-text>
